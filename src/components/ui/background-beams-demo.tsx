@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { Input } from "@/components/ui/input";
+import { BackgroundBeams } from "./background-beams";
+import { Input } from "./input";
 import { ArrowRight, Loader2, Check, AlertTriangle } from "lucide-react";
 import { toast } from "sonner";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "../../lib/supabase";
 
 function BackgroundBeamsDemo() {
   const [email, setEmail] = useState("");
