@@ -12,6 +12,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
+      external: ['@/lib/utils'],
       output: {
         manualChunks: {
           'react-vendor': ['react', 'react-dom'],
